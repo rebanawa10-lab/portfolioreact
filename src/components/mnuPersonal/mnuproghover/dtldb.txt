@@ -1,0 +1,42 @@
+Database#
+
+MS SQL Server! 
+    MS SQL Server is a relational database management system (RDBMS). 
+    Applications and tools connect to a SQL Server instance or database, and communicate using Transact-SQL (T-SQL).
+
+Azure SQL Database! 
+    Azure SQL is a family of managed, secure, and intelligent products that use the SQL Server database engine in the Azure cloud.
+    Azure SQL is built upon the familiar SQL Server engine, so you can migrate applications with ease 
+    and continue to use the tools, languages, and resources you're familiar with. 
+    
+Oracle!
+    Oracle Database (commonly referred to as Oracle DBMS, Oracle Autonomous Database, or simply as Oracle) 
+    is a proprietary multi-model[4] database management system produced and marketed by Oracle Corporation.
+
+    It is a database commonly used for running online transaction processing (OLTP), data warehousing (DW) 
+    and mixed (OLTP & DW) database workloads. Oracle Database is available by several service providers on-premises, 
+    on-cloud, or as a hybrid cloud installation. It may be run on third party servers as well as 
+    on Oracle hardware (Exadata on-premises, on Oracle Cloud or at Cloud at Customer).
+
+MySQL!
+    MySQL is a widely used relational database management system (RDBMS).
+    MySQL is free and open-source.
+    MySQL is ideal for both small and large applications.
+
+Access!
+    Microsoft Access is a database management system (DBMS) from Microsoft that combines the relational 
+    Access Database Engine (ACE) with a graphical user interface and software-development tools. 
+    It is part of the Microsoft 365 suite of applications, included in the Professional and higher editions or sold separately.
+
+DBase!
+    dBase (also stylized dBASE) was one of the first database management systems for microcomputers 
+    and the most successful in its day. 
+    The dBase system included the core database engine, a query system, a forms engine, 
+    and a programming language that tied all of these components together.
+
+Informix!
+    Informix is a product family within IBM's Information Management division 
+    that is centered on several relational database management system (RDBMS) and multi-model database offerings. 
+    The Informix products were originally developed by Informix Corporation, whose Informix Software subsidiary
+    was acquired by IBM in 2001.
+

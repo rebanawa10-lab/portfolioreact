@@ -1,0 +1,171 @@
+Software development#
+
+React! 
+    React is an open-source JavaScript library for building user interfaces (UIs), maintained by Meta (formerly Facebook) 
+    and a large community of developers. 
+
+    It is known for its performance and for simplifying the creation of dynamic and interactive web applications. 
+
+Angular!
+    Angular is a popular, open-source TypeScript-based front-end framework maintained by Google for building modern, 
+    scalable web applications. 
+
+    It uses a component-based architecture to create maintainable, dynamic single-page applications (SPAs). 
+    Key features include built-in tools for routing, form management, client-server communication, and dependency injection. 
+
+C-Sharp!
+    C-Sharp is a modern, general-purpose, object-oriented programming language developed by Microsoft that runs on the .NET framework. 
+
+    It is a versatile, cross-platform language used to build a wide range of applications, 
+    including web apps, desktop software, mobile apps, and video games (particularly with the Unity engine). 
+
+ASP.Net!
+    ASP.NET is an open-source, server-side web application framework developed by Microsoft for building modern web apps, 
+    services, and dynamic websites with the .NET platform. 
+
+ASP.NET Core web API!
+    ASP.NET Core Web API is a modern, open-source, and cross-platform framework from Microsoft for building HTTP-based services, 
+    also known as RESTful APIs. 
+    
+    It allows different applications, such as web frontends, mobile apps, and other backend services, to communicate 
+    and exchange data over the internet, typically using JSON or XML formats. 
+
+NodeJS!
+    Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers 
+    to execute JavaScript code outside of a web browser. 
+
+    It is primarily used for building fast, scalable network applications, APIs, and server-side services. 
+
+Typescript!
+    TypeScript is a free and open-source superset of JavaScript that adds static typing and other features, 
+    primarily designed to build large-scale applications. 
+    All valid JavaScript code is also valid TypeScript code. 
+
+Javascript!
+    JavaScript is a versatile, high-level programming language and one of the core technologies of the World Wide Web, 
+    alongside HTML and CSS. It is primarily used to make web pages interactive and dynamic, running directly in the user's web browser. 
+
+JSON!
+    JSON (JavaScript Object Notation) is a lightweight, text-based, and language-independent data-interchange format 
+    used for storing and transporting data, primarily between a server and web application. 
+    
+    It uses human-readable text to represent data objects consisting of key-value pairs and arrays, 
+    making it a popular, simpler alternative to XML for APIs. 
+
+RestfulAPI!
+    A RESTful API (Representational State Transfer Application Programming Interface) is an architectural style 
+    for designing networked applications that uses standard HTTP protocols to enable communication between different software systems. 
+
+    It provides a flexible and scalable way for applications to exchange data over the internet, 
+    typically using lightweight formats like JSON. 
+
+YAML!
+    YAML ("YAML Ain't Markup Language") is a human-readable data serialization language commonly used for configuration files, 
+    automation (like Ansible), and data exchange. 
+    
+    It uses a minimalist, whitespace-sensitive syntax to represent structured data, such as key-value pairs and lists, 
+    making it easier to read than JSON or XML. 
+
+Docker!
+    Docker is an open source software platform that enables developers to package applications and their dependencies into standardized, 
+    isolated units called containers. 
+    This solves the common problem of "it works on my machine" by ensuring applications run consistently across different environments, 
+    from a developer's laptop to testing and production servers. 
+
+Kubernetes!
+    Kubernetes (often abbreviated as K8s) is an open-source system designed to automate the deployment, scaling, 
+    and management of containerized applications. Originally developed by Google, it acts as a platform for orchestration, 
+    allowing developers to manage, scale, and secure containers (like Docker) across a cluster of servers. 
+
+Web Services!
+    Web services are standardized, machine-to-machine, software-driven systems that allow different applications to communicate, 
+    exchange data, and share functionality over a network (like the internet). 
+    They enable interoperability between disparate systems, such as Java, C++, or .NET applications, 
+    by using open protocols like HTTP and XML-based messaging (SOAP or REST). 
+
+AJAX!
+    AJAX (Asynchronous JavaScript and XML) is a web development technique that allows web pages to update data asynchronously 
+    by exchanging small amounts of data with a server behind the scenes. 
+    
+    It enables dynamic, faster, and more responsive user experiences without requiring a full page reload. 
+
+Visual Studio Code!
+    Visual Studio Code (VS Code) is a free, lightweight, and powerful open-source code editor developed by 
+    Microsoft for Windows, macOS, and Linux. 
+    
+    It supports numerous programming languages, offering features like syntax highlighting, intelligent code completion (IntelliSense), 
+    debugging, and embedded Git control. 
+
+MS Visual Studio!
+    Microsoft Visual Studio is a powerful, feature-rich Integrated Development Environment (IDE) from Microsoft used to code, debug, test, 
+    and deploy applications across Windows, Android, iOS, and the web. 
+    
+    It supports multiple languages (C#, C++, .NET, Python) and provides tools like IntelliSense code completion, Git integration, 
+    and cloud support via Azure.   
+
+HTML!
+    HTML, or HyperText Markup Language, is the standard markup language used to create and structure content on the World Wide Web. 
+    It functions as the foundational "skeleton" of a webpage, defining elements like headings, paragraphs, images, and links, 
+    which web browsers then interpret and display as a visible page. 
+
+IIS!
+    Microsoft Internet Information Services (IIS) is a flexible, secure, and manageable web server software developed by 
+    Microsoft for hosting websites, services, and web applications on the Windows operating system. 
+
+    It supports HTTP, HTTPS, FTP, and other protocols to serve static or dynamic content, particularly for ASP.NET applications. 
+
+CSS!
+    CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation and visual styling of a document written 
+    in a markup language like HTML. It is one of the core technologies of the World Wide Web, alongside HTML and JavaScript. 
+
+XML!
+    Extensible Markup Language (XML) is a markup language and file format used for storing, transporting, 
+    and reconstructing data in a format that is readable by both humans and machines. 
+    
+    Unlike HTML, which has predefined tags and is designed to display data, XML allows users to define their 
+    own custom tags to describe the data's structure and meaning. 
+
+XSLT!
+    XSLT (Extensible Stylesheet Language Transformations) is an XML-based language used to transform, restructure, 
+    and convert XML documents into other formats like HTML, PDF, plain text, or different XML structures. 
+    
+    It acts as a processor that uses XPath to navigate data and applies rules to create new, formatted output files 
+    without changing the original source. 
+
+VBA!
+    VBA stands for Visual Basic for Applications, a programming language from Microsoft that is built into most of the 
+    Microsoft Office suite of applications, including Excel, Word, Access, and PowerPoint. 
+    
+    It is primarily used to automate repetitive tasks, create custom functions, and extend the functionality of these applications. 
+
+GIT!
+    Git is a free, open-source distributed version control system (DVCS) designed to track changes in files and 
+    source code during software development. 
+    
+    It allows individuals and teams to work on projects simultaneously without overwriting each other's work by maintaining 
+    a complete history of all modifications. 
+
+Github!
+    GitHub is a cloud-based platform that acts as a hosting service for Git repositories, enabling developers to store, manage, 
+    and collaborate on code. 
+    
+    It uses Git for version control to track changes, allowing multiple people to work on the same project simultaneously, 
+    track revisions, and merge code from different contributors. 
+
+Citrix!
+    Citrix is a software company (now part of Cloud Software Group) specializing in virtualization, networking, 
+    and cloud computing technologies that enable secure remote access to applications and desktops. 
+    
+    It allows employees to access corporate digital resources from any device or location, improving productivity 
+    and security by centralizing data management. 
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+
+/*  file:       home.css 
+
+    remarks:    React does not serve src/assets directly to the browser.
+
+                NEW: 
+                    background-image: url('/space-galaxy.gif');
+                OLD: 
+                    background-image: url('../../../assets/space-galaxy.gif') ; 
+    
+                     width: 100vw;
+  height: 100vh;
+ position: fixed;              stays fixed while scrolling 
+  top: 0;
+  left: 0;
+  z-index: -1;                   behind other content 
+
+*/
+
+.debug{
+    background-color: yellow;
+}
+
+.app-background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;              
+  top: 0;
+  left: 0;
+  z-index: -1;                   
+  /* background-image: url('/space-galaxy.gif'); */
+  /* background-image: url('/outerspace-15.gif');  1000 x 666px */
+
+  background-image: url('/outerspace-41.gif'); 
+
+  background-size: cover;       /* stretch to cover entire screen */
+  background-position: center;  /* center the GIF */
+  background-repeat: no-repeat;  /* don't tile */
+  
+ 
+}
+

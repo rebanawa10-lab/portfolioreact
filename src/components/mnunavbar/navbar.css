@@ -1,0 +1,38 @@
+
+.MnuHdr {
+    list-style: none;  
+    padding: 0;
+}
+
+.MnuRowMargin {
+    text-align: left;
+    margin-bottom: 1rem;  
+    padding: 0px 20px;     
+                        /* 1rem = 16px */
+}
+
+.menuLink {
+  color: white;
+  text-decoration: none;
+  
+}
+
+
+/* If you ever still see horizontal scroll: */
+html, body {
+  overflow-x: hidden;
+}
+
+
+/* paddingTop 60px cause the scrollbar on right-side for all the components */
+.MainMnuPadding {
+  padding-top: 1px;
+}
+
+/* 
+style={{ paddingTop: "1px" }}
+  paddingTop: 1px;
+
+  paddingTop: "1px"
+
+  padding */

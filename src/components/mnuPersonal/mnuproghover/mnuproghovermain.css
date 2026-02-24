@@ -1,0 +1,61 @@
+/* file:  mnuproghovermain.css */
+
+.container {
+  display: flex;
+  height: 85vh;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+body {
+  margin: 0;
+}
+
+/* Entire page below navbar */
+.page-layout {
+  display: flex;
+  margin-top: 60px; /* same as navbar height */
+  height: calc(90vh - 60px);
+}
+
+.sidebar {
+  width: 200px;
+  background: white;
+  overflow-y: auto;
+  border-right: 1px solid white;
+
+  height: 250px;
+  padding: 1px 10px 20px 1px;
+  
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 5px;
+  cursor: pointer;
+
+  
+}
+
+.sidebar li:hover {
+  background-color: #bfc0f8;
+  font-weight: bold;
+  color: white;
+  border-radius: 999px;   /* pill shape */ 
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  padding: 1px 10px 20px 1px;
+}
+
+/* DEBUG: background: red */
