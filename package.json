@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://rebanawa10-lab.github.io/portfolioreact",
+  "homepage": "https://rebanawa10-lab.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
