@@ -23,26 +23,39 @@ function App() {
 
 const addTodo = async (name: string) => {
   const newTodo = await createTodo(name)  // API returns the created todo
+  console.log("newTodo:", newTodo)
   setTodos(prev => [...prev, newTodo])
 }
 
-  // const addTodo = async (name: string) => {
-  //   await createTodo(name)
-  //   load() // re-fetch all todos
-  // }
+      // const addTodo = async (name: string) => {
+      //   await createTodo(name)
+      //   load() // re-fetch all todos
+      // }
 
 
 
-  const removeTodo = async (id: number) => {
-    await deleteTodo(id)
-    load()
-  }
+const removeTodo = async (id: number) => {
+  await deleteTodo(id)
+  setTodos(prev => prev.filter(todo => todo.id !== id))
+}
+
+  // const removeTodo = async (id: number) => {
+  //   await deleteTodo(id)
+  //   load()
+  // } 
 
    // UPDATE
-   const handleUpdate = async (id: number, name: string) => {
-    await updateTodo(id, name)   // update database
-    load()                       // reload list
-  };
+  const handleUpdate = async (id: number, name: string) => {
+    await updateTodo(id, name)
+    setTodos(prev =>
+      prev.map(todo => (todo.id === id ? { ...todo, name } : todo))
+    )
+  }
+
+      //  const handleUpdate = async (id: number, name: string) => {
+      //   await updateTodo(id, name)   // update database
+      //   load()                       // reload list
+      // }; 
 
   return (
     

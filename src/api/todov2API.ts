@@ -13,7 +13,7 @@ const API = "https://api-node-js-vercel-supabase.vercel.app/api/todo"
 
 export async function getTodos(): Promise<Todo[]> {
   const res = await fetch(API)
-  return res.json()
+  return res.json() 
 }
 
 
@@ -23,9 +23,14 @@ export async function createTodo(name: string): Promise<Todo> {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name })
   })
-  return res.json()  // return the created todo
-}
 
+  const data = await res.json()
+  console.log("Created:", data)   // 👈 debug
+  return data
+
+  // return res.json()  // return the created todo
+}
+ 
 
 // export async function createTodo(name: string) {
 //   await fetch(API, {
