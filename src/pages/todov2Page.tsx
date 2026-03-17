@@ -20,10 +20,18 @@ function App() {
     load()
   }, [])
 
-  const addTodo = async (name: string) => {
-    await createTodo(name)
-    load()
-  }
+
+const addTodo = async (name: string) => {
+  const newTodo = await createTodo(name)  // API returns the created todo
+  setTodos(prev => [...prev, newTodo])
+}
+
+  // const addTodo = async (name: string) => {
+  //   await createTodo(name)
+  //   load() // re-fetch all todos
+  // }
+
+
 
   const removeTodo = async (id: number) => {
     await deleteTodo(id)
