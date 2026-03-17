@@ -1,0 +1,320 @@
+/* file:   src/styles/table.css */
+
+/* Page container */
+.page-container {
+  padding-left: 10px;
+  padding-top: 1px;   
+}
+
+
+/* Form section */
+/* .form-container {
+  margin-bottom: 20px;
+} */
+
+/* Optional: align form inputs nicely */
+/* .form-container form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} */
+
+.gridHeaderStyle  {  
+        padding: 6px;
+        background-color: #f3f4f6;
+        font-weight: bold;
+        font-size: 12px;
+}
+
+.my-cell {
+   font-size: 12px;
+   font-family: Arial; 
+}
+
+.my-button {
+  height: 25px;                 /* button height */
+  font-size: 12px;              /* button font size */
+  font-family: Arial;           /* button font family */
+  padding: 0 12px;              /* horizontal padding */
+  cursor: pointer;              /* pointer on hover */
+  border: 1px solid #ccc;     /* optional border */
+  border-radius: 4px;           /* optional rounded corners */
+  background-color: #f0f0f0;  /* optional background */
+  transition: background-color 0.2s; /* smooth hover effect */
+  width: 90px;
+}
+
+.my-button:hover {
+  background-color: #e0e0e0;  /* hover effect */
+}
+
+
+.my-buttonYN {
+  height: 25px;                 /* button height */
+  font-size: 12px;              /* button font size */
+  font-family: Arial;           /* button font family */
+  padding: 0 12px;              /* horizontal padding */
+  cursor: pointer;              /* pointer on hover */
+  border: 1px solid #ccc;     /* optional border */
+  border-radius: 4px;           /* optional rounded corners */
+  background-color: #b6d8f1;  /* optional background */
+  transition: background-color 0.2s; /* smooth hover effect */
+  width: 90px;
+}
+
+.my-buttonYN:hover {
+  background-color: #b2d7f2;  /* hover effect */
+}
+
+
+/* ===== Inventory Form ===== */
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"] {
+  padding: 6px 8px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150px;
+}
+
+.form-container button {
+  margin-top: 0; /* align buttons with inputs */
+}
+
+
+/* ===== Inventory Grid ===== */
+
+.InventoryPriceCell {
+  text-align: right;
+  padding-right: 6px; /* optional, adds a little space */
+  font-family: Arial; /* optional, numbers align nicely */
+}
+
+
+.gridTableInventory {
+  display: grid;
+  gap: 2px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.gridTableInventory .gridHeader,
+.gridTableInventory .gridRow {
+  display: grid;
+  /* grid-template-columns: 50px 50px 200px 250px 60px 260px; */
+       /* ID, Code, Desc, Price, Actions */
+
+  grid-template-columns: 60px 60px 250px 200px;
+
+  align-items: center;
+  padding: 4px 16px;
+}
+
+.gridTableInventory .gridHeader {
+  background-color: #f3f4f6;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.gridTableInventory .gridRow {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.gridTableInventory .gridRow:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.gridTableInventory button {
+  margin-right: 5px;
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gridTableInventory button:hover {
+  background-color: #ddd;
+}
+
+/* ===== Optional: responsive for small screens ===== */
+@media (max-width: 600px) {
+  .gridTableInventory .gridHeader,
+  .gridTableInventory .gridRow {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 4px;
+  }
+  .gridTableInventory .gridRow div {
+    padding: 2px 0;
+  }
+}
+
+
+/*  Styles for custom modal 
+    Prompt -> Delete confirm ? ->  Y/N
+*/
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+}
+
+.modal-box {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  min-width: 250px;
+  text-align: center;
+}
+
+.modal-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  gap: 10px;
+}
+
+.modal-buttons button {
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Inventory Paging V1 */
+
+.pagination {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 3px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Inventory Paging V2 */
+
+.paginationRow {
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
+  font-family: Arial;
+  font-size: 12px;
+  gap: 20px;  /* space between dropdown and paging */
+}
+/* justify-content: space-between; */
+
+.rowsPerPage {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 6px;
+}
+
+.rowsSelect {
+  font-size: 12px;
+  font-family: Arial;
+  padding: 2px 6px;
+}
+
+.paginationControls {
+  display: flex;
+  gap: 4px;
+}
+ /* margin: 0 auto;   -> centers it */
+
+.paginationControls button {
+  margin: 0 2px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.paginationControls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.activePage {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.noteCode {
+  color: red;
+  font-family: "Arial", monospace;
+  font-size: 10px;
+}
+
+
+
+/* ===== Grid Table Format ===== */
+
+.gridTblFrmt {
+  display: grid;
+  gap: 2px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.gridTblFrmt .gridHeader,
+.gridTblFrmt .gridRow {
+  display: grid;
+  grid-template-columns: 50px 50px 200px 250px 60px 260px; /* ID, Code, Desc, Price, Actions */
+  align-items: center;
+  padding: 4px 16px;
+}
+
+.gridTblFrmt .gridHeader {
+  background-color: #f3f4f6;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.gridTblFrmt .gridRow {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.gridTblFrmt .gridRow:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.gridTblFrmt button {
+  margin-right: 5px;
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gridTblFrmt button:hover {
+  background-color: #ddd;
+}

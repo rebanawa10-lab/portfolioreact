@@ -1,0 +1,22 @@
+Reports#
+
+MS Report Builder! 
+    Microsoft Report Builder is a standalone, user-friendly tool for IT professionals and power users to create, edit, 
+    and publish paginated reports, primarily for SQL Server Reporting Services (SSRS). 
+    
+    It enables the transformation of raw data into detailed, visual formats like charts, maps, and tables, 
+    which can be exported in multiple formats (PDF, Excel, HTML). 
+
+MS SQL Server Reporting Services!
+    Microsoft SQL Server Reporting Services (SSRS) is a server-based platform that provides a set of on-premises tools 
+    and services to create, deploy, and manage various types of reports. 
+    
+    It is a key component of Microsoft's business intelligence suite, used to transform raw data into meaningful, 
+    formatted reports that aid in data analysis and decision-making. 
+
+SAP Crystal Report!
+    SAP Crystal Reports is a popular business intelligence and reporting tool used to design, format, and deliver interactive, 
+    data-driven reports from various sources. It allows users to connect to databases (SQL, Oracle, Excel) 
+    and create visually appealing, pixel-perfect documents like invoices, financial statements, and sales summaries. 
+
+

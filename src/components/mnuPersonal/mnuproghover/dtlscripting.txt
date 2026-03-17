@@ -1,0 +1,38 @@
+Automation script#
+
+Batch file!
+    A batch file is a script file that stores commands to be executed in a serial order. 
+    It helps automate routine tasks without requiring user input or intervention. 
+    Some common applications of batch files include loading programs, 
+    running multiple processes or performing repetitive actions in a sequence in the system.
+
+    Batch files usually have the .bat extension.
+
+Powershell!
+    PowerShell is a cross-platform task automation solution made up of a command-line shell, 
+    a scripting language, and a configuration management framework. 
+    PowerShell runs on Windows, Linux, and macOS.
+
+    The extensible nature of PowerShell provides an ecosystem of PowerShell modules to deploy and manage almost any technology you work with. 
+    For example:
+
+    Microsoft modules
+    * Azure
+    * Windows
+    * Exchange
+    * SQL
+
+    Third-party modules
+    * AWS
+    * VMware
+    * Google Cloud
+
+UiPath!
+    UiPath is a global software company that provides a leading Robotic Process Automation (RPA) platform. 
+    This technology enables organizations to configure computer software or a “robot” to emulate and integrate 
+    the actions of a human interacting within digital systems to further execute tasks within a business process.
+
+    RPA robots utilize the user interface to capture data and manipulate applications just like humans do. 
+    They interpret, trigger responses, and communicate with other systems to perform a vast variety of repetitive tasks. 
+    By doing so, UiPath helps to reduce the burden of monotonous work on employees, 
+    allowing them to focus on more strategic tasks.

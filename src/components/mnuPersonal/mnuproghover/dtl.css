@@ -1,0 +1,14 @@
+.DivTxtFormat {
+  line-height: 1.6;
+
+  max-width: 900px;
+}
+
+.DivTxtFormat h3 {
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+.DivTxtFormat p {
+  margin: 6px 0;
+}

@@ -1,0 +1,121 @@
+#root {
+  height: 83vh;
+  width: 1400px;
+  margin: 0 auto;
+  padding: 1px 10px 20px 1px;
+  text-align: left;
+  
+}
+/* Hometest use background-color */
+/* background-color: white */
+/* DEBUG: 
+border-style: dotted;
+
+*/
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.DivTxtFormat
+{
+    white-space: pre-line;  /* preserves <br> line breaks from text */
+    font-style: Arial;
+    font-size: 12px;
+    text-align: left;
+}
+
+.DivTxtFormatHighlight
+{
+    white-space: pre-line;  /* preserves <br> line breaks from text */
+    font-style: Arial;
+    font-size: 12px;
+    text-align: left;
+    background-color: rgb(238, 245, 154);
+}
+
+.DivPadding
+{
+    padding: "20px"
+}
+
+/* Add Scrollable Main Content CSS */
+.main-content {
+  margin-top: 10px;          /* same as navbar height */ 
+  padding: 1px 10px 20px 3px;
+  height: calc(90vh - 10px);
+  overflow-y: auto;
+  
+}
+/* DEBUG: 
+ background-color: white;     // Remove this
+ background-color: red
+ background-color: rgb(213, 227, 241);
+
+*/
+
+
+/* This is standard practice in most React apps. */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+/* Material UI’s, Typography applies internal styles that override plain CSS. use the !important flag */
+.accordion-title {
+  font-style: Arial;
+  line-height: 1.2 !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  background-color: none;
+}
+
+@media print {
+  body * {
+    visibility: hidden; /* hide everything */
+  }
+  .printable, .printable * {
+    visibility: visible; /* show only the grid */
+  }
+  .printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
