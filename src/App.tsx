@@ -69,6 +69,8 @@ import MnuProgTypeHover from "./components/mnuPersonal/mnuproghover/mnuproghover
 import MnuDataJSONExecSales from "./components/mnuDataJSON/execsalesgrid";
 
 // Data: CRUD To-Do List, Devt: MS SQL Server, Prod: Supabase, Services.msc: FastAPI
+// Onhold: See also the services.msc: FastAPI, C:\Repos\Portfolio\APIFastAPI
+// Note: no Vercel API at the moment
 import MnuCRUDTodo from "./pages/todo" ;
 
 // Data: CRUD To-Do List, Devt: MS SQL Server, Prod: Supabase, Services.msc: NodeAPI
@@ -102,7 +104,7 @@ console.log("BASE:", import.meta.env.BASE_URL);
 console.log("API:", import.meta.env.VITE_API_BASE);
 console.log("============================");
 
-// Test component
+// Test Area: 
 
 
 function App() {

@@ -248,13 +248,13 @@ return (
 
                     </li>
 
-
+                     {/* Onhold:     
                     <li className="MnuRowMargin" >                                  
                           <Link to="/CRUDv1" onClick={() => setIsOpen(false)} className="menuLink">Data: CRUD To-Do (FastAPI)</Link>         
-                    </li>
+                    </li> */}
 
                     <li className="MnuRowMargin" >                                  
-                          <Link to="/CRUDv2" onClick={() => setIsOpen(false)} className="menuLink">Data: CRUD To-Do (NodeJS)</Link>         
+                          <Link to="/CRUDv2" onClick={() => setIsOpen(false)} className="menuLink">Data: CRUD To-Do</Link>         
                     </li>
                   
                   

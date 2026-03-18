@@ -56,18 +56,7 @@ export default function WorldTodayV2() {
     useEffect(() => {
       const loadAnnouncements = async () => {
         try {
-        // OLD:
-        //   const res = await fetch("/worldtoday.json");
-        // NEW:
-        //  const res = await fetch("/portfolioreact/worldtoday.json");
-
-       
-        // OLD
-        // const res = await fetch(`${BASE_PATH}worldtoday.json`);
-        // const data = await res.json();
-
-
-        // NEW
+        
         let res: Response;
         if (import.meta.env.MODE === "production") {
             res = await fetch(`${BASE_PATH}/worldtoday.json`);

@@ -9,6 +9,9 @@ import Accordion from "../components/mnuReviewNestedSidebarv2/accordionfunc";
 
 function App() {
 
+  // Prevent duplicate adds (UX improvement)
+  const [loading, setLoading] = useState(false)
+
   const [todos, setTodos] = useState<Todo[]>([])
 
   const load = async () => {
@@ -21,49 +24,43 @@ function App() {
   }, [])
 
 
-const addTodo = async (name: string) => {
-  const newTodo = await createTodo(name)  // API returns the created todo
-  console.log("newTodo:", newTodo)
-  setTodos(prev => [...prev, newTodo])
-}
+  // Prevent duplicate adds (UX improvement)
+  const addTodo = async (name: string) => {
+    if (loading) return
 
-      // const addTodo = async (name: string) => {
-      //   await createTodo(name)
-      //   load() // re-fetch all todos
-      // }
-
-
-
-const removeTodo = async (id: number) => {
-  await deleteTodo(id)
-  setTodos(prev => prev.filter(todo => todo.id !== id))
-}
-
-  // const removeTodo = async (id: number) => {
-  //   await deleteTodo(id)
-  //   load()
-  // } 
-
-   // UPDATE
-  const handleUpdate = async (id: number, name: string) => {
-    await updateTodo(id, name)
-    setTodos(prev =>
-      prev.map(todo => (todo.id === id ? { ...todo, name } : todo))
-    )
+    setLoading(true)
+    try {
+      const newTodo = await createTodo(name)
+      setTodos(prev => [...prev, newTodo])
+    } finally {
+      setLoading(false)
+    }
   }
 
-      //  const handleUpdate = async (id: number, name: string) => {
-      //   await updateTodo(id, name)   // update database
-      //   load()                       // reload list
-      // }; 
+  const removeTodo = async (id: number) => {
+    await deleteTodo(id)
+    setTodos(prev => prev.filter(todo => todo.id !== id))
+  }
+
+
+  // UPDATE
+  const handleUpdate = async (id: number, name: string) => {
+    const updated = await updateTodo(id, name)
+
+    setTodos(prev =>
+      prev.map(t =>
+        t.id === id ? (updated || { ...t, name }) : t
+      )
+    )
+
+  }
 
   return (
     
     <div>
         <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-            <h2 style={{ margin: 0 }}>CRUD To-Do List  (MS SQLServer)</h2>
-
-            
+            <h2 style={{ margin: 0 }}>CRUD To-Do List</h2>
+        
         </div>
         <Accordion title="Overview">
               <p className="DivTxtFormatHighlight">            
@@ -74,8 +71,6 @@ const removeTodo = async (id: number) => {
               </p>    
         </Accordion>
         <br></br>
-
-     
 
       <TodoForm onCreate={addTodo} />
 

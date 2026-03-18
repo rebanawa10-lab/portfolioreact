@@ -9,16 +9,13 @@ const Home: React.FC = () => {
 
   const [showMessage, setShowMessage] = useState(false);
 
-  // const basePath = import.meta.env.VITE_BASE_PATH || "";
-
-  console.log("homeaurora.tsx BASE_PATH:", BASE_PATH);
+  // console.log("homeaurora.tsx BASE_PATH:", BASE_PATH);
 
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.5; // 0.5 = slower, 2 = faster
     }
 
-    // #####
     // Function to show message for 5 seconds
     const triggerMessage = () => {
       setShowMessage(true);

@@ -14,6 +14,18 @@ export type User = {
 };
 
 export const getSalesman = async (): Promise<User[]> => {
-  const res = await nodeApi.get("/salesman");
+  
+  const url = `${import.meta.env.VITE_NODEJS_API || ""}/api/sales`
+  // console.log("Todo MS SQL SVR:", url); 
+
+  // ORIG      : "/salesman";
+  // console.log("Fetching Salesman from URL:", url); // ✅ debug log
+
+  const res = await nodeApi.get(url);
+
   return res.data;
+
+
 };
+
+

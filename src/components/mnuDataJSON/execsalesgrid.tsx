@@ -51,37 +51,7 @@ export default function UserGrid() {
             .catch((err) => console.error("API error:", err));
     }, []);
 
-    // VER2
-  // NODEJS JSON data
-    // useEffect(() => {
-    //     const API_BASE = import.meta.env.VITE_API_BASE;
-    //     console.log("Exec Sales Grid API:", {API_BASE});
-    //     fetch(`${API_BASE}/salesman`)
-    //         .then((res) => res.json())
-    //         .then((data: User[]) => {
-    //         setRows(data);
-    //         setFilteredRows(data);
-    //         })
-    //         .catch((err) => console.error("API error:", err));
-
-    // }, []);
-
-     // VER1
-// LOCAL Dir JSON
-//   useEffect(() => {
-//     // IIS,     VITE_BASE_PATH=
-//     // PROD,    VITE_BASE_PATH=/portfolioreact
-//     // CURRENT USING THE DATA IN PUBLIC folder.
-    
-//     fetch(`${BASE_PATH}/execsalesdata.json`)
-//       .then((res) => res.json())
-//       .then((data: User[]) => {
-//         setRows(data);
-//         setFilteredRows(data); // enable print button initially
-//       });
-//   }, []);
-
-
+   
   const columns: GridColDef<User>[] = [
     { field: "userid", headerName: "User ID", width: 120 },
     { field: "username", headerName: "User Name", width: 250 },
@@ -306,16 +276,6 @@ function CustomPagination() {
                 }}
                 pagination
                 autoHeight
-
-                // OLD: default, without << and >> button
-                // slotProps={{
-                //     pagination: {
-                //     showFirstButton: true,
-                //     showLastButton: true,
-                //     sx: { justifyContent: "center", display: "flex", mt: 1 },
-                //     },
-                // }}
-                // NEW:
 
                 slots={{
                     pagination: CustomPagination,
