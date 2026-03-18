@@ -13,7 +13,7 @@ interface Props {
 export default function TodoList({ todos, onDelete, onUpdate }: Props) {
 
   const [editId, setEditId] = useState<number | null>(null)
-  const [editText, setEditText] = useState("")
+  const [editText, setEditText] = useState("") 
 
   const [confirmDelete, setConfirmDelete] = useState<Todo | null>(null)
 

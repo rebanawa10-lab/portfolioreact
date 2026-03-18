@@ -9,7 +9,7 @@ export type User = {
   country: string;
   countrydesc: string;
   hired: string;
-  active: number;
+  active: number; 
   sales: number;
 };
 

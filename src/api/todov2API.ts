@@ -42,16 +42,16 @@ export async function updateTodo(id: number, name: string): Promise<Todo> {
   })
 
   if (!res.ok) {
-    throw new Error("Failed to update todo")
+    throw new Error("Failed to update todo") 
   }
 
-  return res.json()
+  return res.json() 
 }
 
 
 export async function deleteTodo(id: number): Promise<{ id: number }> {
   const res = await fetch(`${API}/${id}`, {
-    method: "DELETE"
+    method: "DELETE" 
   })
 
   if (!res.ok) {

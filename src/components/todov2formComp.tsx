@@ -8,7 +8,7 @@ interface Props {
 
 export default function TodoForm({ onCreate }: Props) {
 
-  const [name, setName] = useState("")
+  const [name, setName] = useState("") 
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault()
