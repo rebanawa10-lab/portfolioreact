@@ -8,7 +8,7 @@ import type { User } from "../types/user";
 
 import { log } from "../../src/config/debug";
 
-const API_URL = import.meta.env.VITE_API_BASE;
+const API_URL = import.meta.env.VITE_API_BASE; 
 // const API_URL = import.meta.env.VITE_API_BASE;
   // OLD 
   // import API_BASE from "../../src/config/apiBase";
